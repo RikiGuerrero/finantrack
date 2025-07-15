@@ -23,8 +23,7 @@ FinanTrack es una aplicación web sencilla y elegante para **gestionar tus finan
 
 > *(Puedes añadir aquí capturas reales de tu app si lo deseas)*
 
-![Captura 1](./screenshots/main-light.png)  
-![Captura 2](./screenshots/main-dark.png)
+![Login](./screenshot/loginPage.png)
 
 ---
 
