@@ -2,7 +2,7 @@
 
 FinanTrack es una aplicación web sencilla y elegante para **gestionar tus finanzas personales**. Permite registrar ingresos y gastos, filtrarlos por categoría, ver gráficos dinámicos y exportar tus datos. Todo desde el navegador, sin necesidad de registrarse ni instalar nada.
 
-🔗 **Demo online:** [finantrack.netlify.app](https://finantrack.netlify.app)  
+🔗 **Demo online:** [finantrack.netlify.app](https://eloquent-queijadas-3096b5.netlify.app/)  
 🧠 **Tecnologías:** HTML, CSS, JavaScript, Chart.js, localStorage  
 🎯 **Estado:** Completado (v1.0)
 
@@ -21,9 +21,9 @@ FinanTrack es una aplicación web sencilla y elegante para **gestionar tus finan
 
 ## 📸 Capturas
 
-> *(Puedes añadir aquí capturas reales de tu app si lo deseas)*
-
 ![Login](./screenshot/loginPage.png)
+![Formulario y transacciones](./screenshot/formTransactionPage.png)
+![Gráficos](./screenshot/graphicsPage.png)
 
 ---
 
@@ -40,6 +40,37 @@ FinanTrack es una aplicación web sencilla y elegante para **gestionar tus finan
 ## 🚀 Cómo usar localmente
 
 ```bash
-git clone https://github.com/tu-usuario/finantrack.git
+git clone https://github.com/RikiGuerrero/finantrack.git
 cd finantrack
 # Abre index.html directamente en el navegador
+```
+
+---
+
+## 📂 Estructura del proyecto
+```
+.
+├── LICENSE
+├── README.md
+├── index.html
+├── screenshot
+│   ├── formTransactionPage.png
+│   ├── graphicsPage.png
+│   └── loginPage.png
+├── script.js
+└── style.css
+```
+---
+
+## 📬 Autor
+
+**Ricardo Guerrero Cabrera**  
+Estudiante de programación en 42 Málaga 
+[LinkedIn](https://www.linkedin.com/in/ricardo-guerrero-cabrera/)
+
+---
+
+## 🪪 Licencia
+
+Este proyecto está licenciado bajo la licencia [MIT](./LICENSE).  
+Eres libre de usarlo, modificarlo y compartirlo siempre que mantengas el aviso de copyright.
