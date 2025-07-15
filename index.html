@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FinanTrack</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="login-screen">
+		<h2>Bienvenido a FinanTrack 👋</h2>
+		<input type="text" id="username-input" placeholder="Tu nombre" />
+		<button id="login-btn">Entrar</button>
+	</div>
+	<header>
+		<div class="header-content">
+			<h1>FinanTrack</h1>
+			<button id="logout-btn" class="logout-btn">Cerrar Sesión</button>
+		</div>
+		<div class="balance">
+			<h2>Balance:</h2>
+			<p id="balance">0 €</p>
+		</div>
+	</header>
+	
+	<main>
+		<section class="transaction-form">
+			<h2>Nueva Transacción</h2>
+			<form id="form">
+				<input type="text" id="description" placeholder="Descripción" required>
+				<input type="number" id="amount" placeholder="Cantidad (€)" required>
+				<select id="category">
+					<option value="" disabled selected>Categoría</option>
+					<option value="Vivienda">Vivienda</option>
+					<option value="Transporte">Transporte</option>
+					<option value="Alimentación">Alimentación</option>
+					<option value="Salud">Salud</option>
+					<option value="Educacion">Educación</option>
+					<option value="Compras">Compras</option>
+					<option value="Servicios">Servicios</option>
+					<option value="Inversiones">Inversiones</option>
+					<option value="Ahorro">Ahorro</option>
+					<option value="Deudas">Deudas</option>
+					<option value="Impuestos">Impuestos</option>
+					<option value="Seguros">Seguros</option>
+					<option value="Trabajo">Trabajo</option>
+					<option value="Regalos">Regalos</option>
+					<option value="Otros">Otros</option>
+				</select>
+				<select id="type">
+					<option value="income">Ingreso</option>
+					<option value="expense">Gasto</option>
+				</select>
+				<button type="submit">Añadir</button>
+			</form>
+			<div id="form-message"></div>
+		</section>
+
+		<section class="transactions">
+			<h2>Transacciones</h2>
+			<div class="filters">
+				<select id="filter-type">
+					<option value="all">Todos</option>
+					<option value="income">Ingresos</option>
+					<option value="expense">Gastos</option>
+				</select>
+
+				<select id="filter-category">
+					<option value="all">Todas las categorías</option>
+					<option value="Vivienda">Vivienda</option>
+					<option value="Transporte">Transporte</option>
+					<option value="Alimentación">Alimentación</option>
+					<option value="Salud">Salud</option>
+					<option value="Educacion">Educación</option>
+					<option value="Compras">Compras</option>
+					<option value="Servicios">Servicios</option>
+					<option value="Inversiones">Inversiones</option>
+					<option value="Ahorro">Ahorro</option>
+					<option value="Deudas">Deudas</option>
+					<option value="Impuestos">Impuestos</option>
+					<option value="Seguros">Seguros</option>
+					<option value="Trabajo">Trabajo</option>
+					<option value="Regalos">Regalos</option>
+					<option value="Otros">Otros</option>
+				</select>
+			</div>
+			<ul id="transaction-list">
+
+			</ul>
+		</section>
+
+		<section class="charts">
+			<h2>📊 Resumen Visual</h2>
+			<div class="charts-container">
+				<canvas id="chart-type"></canvas>
+			</div>
+			<div class="charts-container">
+				<canvas id="chart-category"></canvas>
+			</div>
+		</section>
+		<div class="export-buttons">
+			<button id="export-csv">Exportar CSV</button>
+			<button id="export-json">Exportar JSON</button>
+		</div>
+	</main>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
